@@ -1,0 +1,24 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/48icon.png",
+      "default_popup": "popup.html",
+      "default_title": "SNOW "
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "*://microsoft.service-now.com/*", "*://microsoftppe.service-now.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "automation and UI enhancements for MLS",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt6zoQchAoXvlq9vfxKLhDG3Oey18q0a7IO0/tPZxK1W1GbHpkwdornpsX5MZkpW3SrY/sTCahnZiIPOjOkJGGF24tTObXPJ9pt2z3WjWARpHDmEug/NPQ4UJtISsCopNW5r4dlJmKchHBdxwPKnU0L0r7P8s5qGvACtB4TEpSFWOK3d7jYVdF84c1+mPdG4gfua4ZnDMPCjiSqs/QpC3SAMF7GOPO4DWMWrnNBamL+Q2G8Nx1OxAguOdPE0ofm8OlWlagDUYUkV6M41LMgcvF6dtSqnBDrcudzKNBnrZguOIuA6jbvnVGqhfPrG/KjVgW79ZlyGsok2IajgUKb5hCwIDAQAB",
+   "manifest_version": 2,
+   "name": "MLS Browser Tools",
+   "permissions": [ "activeTab", "storage", "*://microsoft.service-now.com/*", "storage", "webRequest", "webNavigation", "tabs", "*://microsoftppe.service-now.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.3"
+}

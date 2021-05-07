@@ -1,0 +1,81 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.container {
+    width: 520px;
+}
+#billingSelect{
+ margin-left:16px
+}
+
+.parent div{
+    padding:1px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 1px;
+    margin: 3px;
+    width: 200px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.flex-container {
+    display: flex;         
+}
+#testmsg{
+    font-size:1.2em;
+    font-weight:bold;
+}
+.workItemBtn{
+    display:block;
+    width:100%;
+    text-align:left;
+}
+
+.quantityTitle{
+    color:black;
+}
+.quantityValue{
+    background:white;
+    width:40px;
+    border:1px solid black;
+    border-radius:5px;
+    text-align: center;
+}
+.quantityChange{
+    color:black;
+}
+
+.timeTitle{
+    color:black;
+}
+.timeValue{
+    background:white;
+    width:40px;
+    border:1px solid black;
+    border-radius:5px;
+    text-align: center;
+}
+.timeChange{
+    color:black;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 3fr 1.5fr 1.5fr;
+}
